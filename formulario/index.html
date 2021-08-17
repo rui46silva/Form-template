@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rui Silva">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<title>Formulario</title>
+</head>
+<body>
+	<section class="container">
+
+		<div class="logo">
+			<img src="img/bitcoin.svg" alt="Bitcoin icon">
+		</div>
+
+		<!--//////// FORMULARIO ///////-->
+
+		<form method="post">
+			<div class="code01">
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre..." maxlength="40">
+			</div>
+			<div class="code01">
+				<label for="apellido">Apellido</label>
+				<input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido..." maxlength="40">
+			</div>
+			<div class="fecha00">
+				<label for="fecha">Fecha de nacimiento</label>
+				<input type="date" id="fecha" name="fecha" >
+			</div>
+
+			<!-- ///////////// CREDIT CARD //////////// -->
+
+			<!-- FRONT -->
+			<div class="creditCard01">
+				<input id="number01" type="text" placeholder="XXXX" maxlength="4" required>
+				<input type="text" placeholder="XXXX" maxlength="4" required>
+				<input type="text" placeholder="XXXX" maxlength="4" required>
+				<input id="last-number" type="text" placeholder="XXXX" maxlength="4" required>
+	        	<div class="validDate">
+	          		<p class="">Valid<br>Thru</p>
+	          		<input id="first-exp" type="text" placeholder="01" maxlength="2"required>
+	          		<input id="last-exp" type="text" placeholder="18" maxlength="2" required>
+	          	</div>
+		        <div class="nameCard">
+		          	<input type="text" placeholder="Nombre" maxlength="40" required>
+		          	<input type="text" placeholder="Apellido" maxlength="80" required>
+		        </div>
+	        	
+        	</div>
+
+        	<!-- BACK -->
+        	<div class="creditCard02">
+	        	<div class="creditCardStrip"></div>
+	        	<div class="creditCardValidateBar"></div>
+	        	<input type="text" placeholder="cvv" maxlength="3" required>
+      		</div>
+      		<div class="btn">
+      		<input type="submit" class="enviar" onclick="return getAge()">
+      		</div>
+		</form>
+	</section>
+
+	<footer>&copy; 2021 Rui Silva </footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

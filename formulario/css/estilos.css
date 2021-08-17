@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Prompt';
+	src: url(src/font/Prompt-Regular.ttf);
+}
+
+body {
+	font-family: Prompt, helvetica, sans-serif;
+	background: linear-gradient(0deg, rgba(153,237,254,1) 0%, rgba(46,144,252,1) 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	margin: 190px auto;
+	background-color: rgb(245, 245, 245);
+	width: 500px;
+	padding: 50px;
+	box-shadow: 0px 0px 20px rgba( 10, 10, 10, 0.3);
+	border-radius: 50px;
+}
+
+.container .logo {
+	margin: 0 auto 30px auto;
+	height: 80px;
+	width: 80px;
+}
+
+.container input {
+	border: none;
+	background-color: rgba(200, 200, 200, 0.2);
+	padding: 10px;
+	margin: 10px;
+}
+
+.code01 label {
+	padding: 10px;
+}
+
+.code01 input {
+	width: 70%;
+}
+
+.fecha00 label {
+	padding-left: 12px;
+}
+
+#fecha {
+	width: 48%;
+}
+
+.creditCard01 {
+	margin-top: 30px;
+	background-color: rgba(200, 200, 200, 0.2);
+	border-radius: 20px;
+	height: 220px;
+}
+
+.creditCard01 input {
+	width: 55px;
+	margin-top: 50px;
+}
+
+.validDate {
+	float: right;
+	margin: 20px 30px 0 0;
+}
+
+.validDate input{
+	margin: 0;
+	width: 35px;
+	font-size: 12px;
+}
+
+.validDate p {
+	font-size: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nameCard {
+	margin: 70px 0 30px 10px;
+}
+
+.nameCard input {
+	margin: 0 ;
+	width: 150px;
+}
+
+.creditCard02 {
+	background-color: rgba(200, 200, 200, 0.2);
+	border-radius: 20px;
+	height: 220px;
+	margin-top: 30px;
+}
+
+.creditCardStrip {
+	position: relative;
+	top: 30px;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(10, 10, 10, 0.5);
+}
+
+.creditCardValidateBar {
+	position: relative;
+	top: 50px;
+	left: 30px;
+	width: 50%;
+	height: 30px;
+	background-color: rgba(245, 245, 245, 1);
+}
+
+.creditCard02 input {
+	float: right;
+	margin: 20px 80px 0 0;
+	width: 50px;
+}
+
+.btn {
+	text-align: center;
+	margin-top: 50px;
+}
+.btn .enviar {
+	background-color: rgba(245, 245, 245, 1);
+	box-shadow: 0px 5px 2px rgba( 10, 10, 10, 0.2);
+	border-radius: 20px;
+	height: 60px;
+	width: 100px;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+footer::after {
+	content:"";
+	clear: both;
+	display: table;
+}
+
+
+@media screen and (max-width: 700px) {
+	.container {
+		margin:0;
+		width: 100%;
+	}
+	.code01 input {
+		width: 100%;
+	}
+
+}
+
